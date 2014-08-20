@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7BADB74119A5093F000A4A40 /* STAddGasLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BADB74019A5093F000A4A40 /* STAddGasLogViewController.m */; };
+		7BADB74419A50966000A4A40 /* STViewHistoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BADB74319A50966000A4A40 /* STViewHistoryTableViewController.m */; };
+		7BADB74819A50981000A4A40 /* STAddCarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BADB74619A50981000A4A40 /* STAddCarViewController.m */; };
+		7BADB74919A50981000A4A40 /* STAddCarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BADB74719A50981000A4A40 /* STAddCarViewController.xib */; };
 		7BE576F419A4F40000EACE31 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE576F319A4F40000EACE31 /* Foundation.framework */; };
 		7BE576F619A4F40000EACE31 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE576F519A4F40000EACE31 /* CoreGraphics.framework */; };
 		7BE576F819A4F40000EACE31 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE576F719A4F40000EACE31 /* UIKit.framework */; };
@@ -21,6 +25,9 @@
 		7BE5771519A4F40000EACE31 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE576F719A4F40000EACE31 /* UIKit.framework */; };
 		7BE5771D19A4F40000EACE31 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7BE5771B19A4F40000EACE31 /* InfoPlist.strings */; };
 		7BE5771F19A4F40000EACE31 /* SaveTrackTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE5771E19A4F40000EACE31 /* SaveTrackTests.m */; };
+		7BE5772A19A4F42E00EACE31 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7BE5772819A4F42E00EACE31 /* Model.xcdatamodeld */; };
+		7BE5774019A4FC1200EACE31 /* GasStop.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE5773F19A4FC1200EACE31 /* GasStop.m */; };
+		7BE5774319A4FC1200EACE31 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE5774219A4FC1200EACE31 /* Car.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +41,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7BADB73F19A5093F000A4A40 /* STAddGasLogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STAddGasLogViewController.h; sourceTree = "<group>"; };
+		7BADB74019A5093F000A4A40 /* STAddGasLogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STAddGasLogViewController.m; sourceTree = "<group>"; };
+		7BADB74219A50966000A4A40 /* STViewHistoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STViewHistoryTableViewController.h; sourceTree = "<group>"; };
+		7BADB74319A50966000A4A40 /* STViewHistoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STViewHistoryTableViewController.m; sourceTree = "<group>"; };
+		7BADB74519A50981000A4A40 /* STAddCarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STAddCarViewController.h; sourceTree = "<group>"; };
+		7BADB74619A50981000A4A40 /* STAddCarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STAddCarViewController.m; sourceTree = "<group>"; };
+		7BADB74719A50981000A4A40 /* STAddCarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STAddCarViewController.xib; sourceTree = "<group>"; };
 		7BE576F019A4F40000EACE31 /* SaveTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SaveTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BE576F319A4F40000EACE31 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7BE576F519A4F40000EACE31 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +67,11 @@
 		7BE5771A19A4F40000EACE31 /* SaveTrackTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SaveTrackTests-Info.plist"; sourceTree = "<group>"; };
 		7BE5771C19A4F40000EACE31 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7BE5771E19A4F40000EACE31 /* SaveTrackTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SaveTrackTests.m; sourceTree = "<group>"; };
+		7BE5772919A4F42E00EACE31 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		7BE5773E19A4FC1200EACE31 /* GasStop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GasStop.h; sourceTree = "<group>"; };
+		7BE5773F19A4FC1200EACE31 /* GasStop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GasStop.m; sourceTree = "<group>"; };
+		7BE5774119A4FC1200EACE31 /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
+		7BE5774219A4FC1200EACE31 /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +98,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7BADB74A19A509BA000A4A40 /* Add Gas Log */ = {
+			isa = PBXGroup;
+			children = (
+				7BADB73F19A5093F000A4A40 /* STAddGasLogViewController.h */,
+				7BADB74019A5093F000A4A40 /* STAddGasLogViewController.m */,
+			);
+			name = "Add Gas Log";
+			sourceTree = "<group>";
+		};
+		7BADB74B19A509C5000A4A40 /* View History */ = {
+			isa = PBXGroup;
+			children = (
+				7BADB74219A50966000A4A40 /* STViewHistoryTableViewController.h */,
+				7BADB74319A50966000A4A40 /* STViewHistoryTableViewController.m */,
+			);
+			name = "View History";
+			sourceTree = "<group>";
+		};
+		7BADB74C19A509D9000A4A40 /* Add Car */ = {
+			isa = PBXGroup;
+			children = (
+				7BADB74519A50981000A4A40 /* STAddCarViewController.h */,
+				7BADB74619A50981000A4A40 /* STAddCarViewController.m */,
+				7BADB74719A50981000A4A40 /* STAddCarViewController.xib */,
+			);
+			name = "Add Car";
+			sourceTree = "<group>";
+		};
+		7BADB74D19A50E0F000A4A40 /* Main View */ = {
+			isa = PBXGroup;
+			children = (
+				7BE5770219A4F40000EACE31 /* STAppDelegate.h */,
+				7BE5770319A4F40000EACE31 /* STAppDelegate.m */,
+				7BE5770819A4F40000EACE31 /* STViewController.h */,
+				7BE5770919A4F40000EACE31 /* STViewController.m */,
+			);
+			name = "Main View";
+			sourceTree = "<group>";
+		};
 		7BE576E719A4F40000EACE31 = {
 			isa = PBXGroup;
 			children = (
@@ -112,11 +170,12 @@
 		7BE576F919A4F40000EACE31 /* SaveTrack */ = {
 			isa = PBXGroup;
 			children = (
-				7BE5770219A4F40000EACE31 /* STAppDelegate.h */,
-				7BE5770319A4F40000EACE31 /* STAppDelegate.m */,
+				7BADB74A19A509BA000A4A40 /* Add Gas Log */,
+				7BADB74B19A509C5000A4A40 /* View History */,
+				7BADB74C19A509D9000A4A40 /* Add Car */,
+				7BE5773719A4F59200EACE31 /* Data Models */,
+				7BADB74D19A50E0F000A4A40 /* Main View */,
 				7BE5770519A4F40000EACE31 /* Main.storyboard */,
-				7BE5770819A4F40000EACE31 /* STViewController.h */,
-				7BE5770919A4F40000EACE31 /* STViewController.m */,
 				7BE5770B19A4F40000EACE31 /* Images.xcassets */,
 				7BE576FA19A4F40000EACE31 /* Supporting Files */,
 			);
@@ -150,6 +209,19 @@
 				7BE5771B19A4F40000EACE31 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7BE5773719A4F59200EACE31 /* Data Models */ = {
+			isa = PBXGroup;
+			children = (
+				7BE5772819A4F42E00EACE31 /* Model.xcdatamodeld */,
+				7BE5774119A4FC1200EACE31 /* Car.h */,
+				7BE5774219A4FC1200EACE31 /* Car.m */,
+				7BE5773E19A4FC1200EACE31 /* GasStop.h */,
+				7BE5773F19A4FC1200EACE31 /* GasStop.m */,
+			);
+			name = "Data Models";
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +301,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BADB74919A50981000A4A40 /* STAddCarViewController.xib in Resources */,
 				7BE5770C19A4F40000EACE31 /* Images.xcassets in Resources */,
 				7BE576FE19A4F40000EACE31 /* InfoPlist.strings in Resources */,
 				7BE5770719A4F40000EACE31 /* Main.storyboard in Resources */,
@@ -250,9 +323,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BADB74419A50966000A4A40 /* STViewHistoryTableViewController.m in Sources */,
+				7BE5774319A4FC1200EACE31 /* Car.m in Sources */,
 				7BE5770A19A4F40000EACE31 /* STViewController.m in Sources */,
 				7BE5770019A4F40000EACE31 /* main.m in Sources */,
+				7BE5774019A4FC1200EACE31 /* GasStop.m in Sources */,
+				7BADB74819A50981000A4A40 /* STAddCarViewController.m in Sources */,
 				7BE5770419A4F40000EACE31 /* STAppDelegate.m in Sources */,
+				7BE5772A19A4F42E00EACE31 /* Model.xcdatamodeld in Sources */,
+				7BADB74119A5093F000A4A40 /* STAddGasLogViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,6 +536,7 @@
 				7BE5772419A4F40000EACE31 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7BE5772519A4F40000EACE31 /* Build configuration list for PBXNativeTarget "SaveTrackTests" */ = {
 			isa = XCConfigurationList;
@@ -465,8 +545,23 @@
 				7BE5772719A4F40000EACE31 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7BE5772819A4F42E00EACE31 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7BE5772919A4F42E00EACE31 /* Model.xcdatamodel */,
+			);
+			currentVersion = 7BE5772919A4F42E00EACE31 /* Model.xcdatamodel */;
+			name = Model.xcdatamodeld;
+			path = SaveTrack/Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 7BE576E819A4F40000EACE31 /* Project object */;
 }
