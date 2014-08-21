@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface STAddCarViewController : UIViewController
+@interface STAddCarViewController : UIViewController <UITextFieldDelegate>
+
+@property (weak, nonatomic) IBOutlet UITextField *yearTextField;
+@property (weak, nonatomic) IBOutlet UITextField *makeTextField;
+@property (weak, nonatomic) IBOutlet UITextField *modelTextField;
+
+- (IBAction)cancel:(id)sender;
+- (IBAction)save:(id)sender;
 
 @end

@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface STViewController : UIViewController
+@interface STViewController : UIViewController <UIAlertViewDelegate>
 
 @end

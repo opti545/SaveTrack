@@ -34,5 +34,28 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    [self.view endEditing:YES];
+}
+-(BOOL)textFieldShouldReturn:(UITextField *)textField{
+    if(textField == self.yearTextField){
+        [self.yearTextField resignFirstResponder];
+    }
+    if(textField == self.modelTextField){
+        [self.modelTextField resignFirstResponder];
+    }
+    if(textField == self.makeTextField){
+        [self.makeTextField resignFirstResponder];
+        
+    }
+    return YES;
+    
+}
+- (IBAction)cancel:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 
+- (IBAction)save:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 @end

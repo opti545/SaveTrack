@@ -7,7 +7,7 @@
 //
 
 #import "STViewHistoryTableViewController.h"
-
+#import "STViewInformationTableViewCell.h"
 @interface STViewHistoryTableViewController ()
 
 @end
@@ -27,6 +27,8 @@
 {
     [super viewDidLoad];
     
+    
+    [self.tableView registerNib:[UINib nibWithNibName:@"STViewInformationTableViewCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"GasStopViewCell"];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -50,21 +52,24 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
+
     // Return the number of rows in the section.
-    return 0;
+    return 1;
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    STViewInformationTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"GasStopViewCell" forIndexPath:indexPath];
     
-    // Configure the cell...
+    cell.milesDrivenLabel.text = @"170";
+    cell.pricePerGallonLabel.text = @"3.39";
+    cell.totalGallonsLabel.text = @"9.84";
+    cell.dateLabel.text =@"12/14/2014";
     
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.
