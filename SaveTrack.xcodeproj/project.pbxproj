@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B3E68DC19AE0469006C14CD /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B3E68DB19AE0469006C14CD /* Car.m */; };
+		7B3E68DF19AE1D64006C14CD /* GasStop.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B3E68DE19AE1D64006C14CD /* GasStop.m */; };
 		7BADB74119A5093F000A4A40 /* STAddGasLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BADB74019A5093F000A4A40 /* STAddGasLogViewController.m */; };
 		7BADB74419A50966000A4A40 /* STViewHistoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BADB74319A50966000A4A40 /* STViewHistoryTableViewController.m */; };
 		7BADB74819A50981000A4A40 /* STAddCarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BADB74619A50981000A4A40 /* STAddCarViewController.m */; };
@@ -26,8 +28,6 @@
 		7BE5771D19A4F40000EACE31 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7BE5771B19A4F40000EACE31 /* InfoPlist.strings */; };
 		7BE5771F19A4F40000EACE31 /* SaveTrackTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE5771E19A4F40000EACE31 /* SaveTrackTests.m */; };
 		7BE5772A19A4F42E00EACE31 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7BE5772819A4F42E00EACE31 /* Model.xcdatamodeld */; };
-		7BE5774019A4FC1200EACE31 /* GasStop.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE5773F19A4FC1200EACE31 /* GasStop.m */; };
-		7BE5774319A4FC1200EACE31 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE5774219A4FC1200EACE31 /* Car.m */; };
 		7BE7D6BB19A66FC1006641C4 /* STViewInformationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE7D6B919A66FC1006641C4 /* STViewInformationTableViewCell.m */; };
 		7BE7D6BC19A66FC1006641C4 /* STViewInformationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BE7D6BA19A66FC1006641C4 /* STViewInformationTableViewCell.xib */; };
 /* End PBXBuildFile section */
@@ -43,6 +43,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7B3E68DA19AE0469006C14CD /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
+		7B3E68DB19AE0469006C14CD /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
+		7B3E68DD19AE1D64006C14CD /* GasStop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GasStop.h; sourceTree = "<group>"; };
+		7B3E68DE19AE1D64006C14CD /* GasStop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GasStop.m; sourceTree = "<group>"; };
 		7BADB73F19A5093F000A4A40 /* STAddGasLogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STAddGasLogViewController.h; sourceTree = "<group>"; };
 		7BADB74019A5093F000A4A40 /* STAddGasLogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STAddGasLogViewController.m; sourceTree = "<group>"; };
 		7BADB74219A50966000A4A40 /* STViewHistoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STViewHistoryTableViewController.h; sourceTree = "<group>"; };
@@ -70,10 +74,6 @@
 		7BE5771C19A4F40000EACE31 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7BE5771E19A4F40000EACE31 /* SaveTrackTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SaveTrackTests.m; sourceTree = "<group>"; };
 		7BE5772919A4F42E00EACE31 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-		7BE5773E19A4FC1200EACE31 /* GasStop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GasStop.h; sourceTree = "<group>"; };
-		7BE5773F19A4FC1200EACE31 /* GasStop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GasStop.m; sourceTree = "<group>"; };
-		7BE5774119A4FC1200EACE31 /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
-		7BE5774219A4FC1200EACE31 /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
 		7BE7D6B819A66FC1006641C4 /* STViewInformationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STViewInformationTableViewCell.h; sourceTree = "<group>"; };
 		7BE7D6B919A66FC1006641C4 /* STViewInformationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STViewInformationTableViewCell.m; sourceTree = "<group>"; };
 		7BE7D6BA19A66FC1006641C4 /* STViewInformationTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STViewInformationTableViewCell.xib; sourceTree = "<group>"; };
@@ -222,11 +222,11 @@
 		7BE5773719A4F59200EACE31 /* Data Models */ = {
 			isa = PBXGroup;
 			children = (
+				7B3E68DD19AE1D64006C14CD /* GasStop.h */,
+				7B3E68DE19AE1D64006C14CD /* GasStop.m */,
 				7BE5772819A4F42E00EACE31 /* Model.xcdatamodeld */,
-				7BE5774119A4FC1200EACE31 /* Car.h */,
-				7BE5774219A4FC1200EACE31 /* Car.m */,
-				7BE5773E19A4FC1200EACE31 /* GasStop.h */,
-				7BE5773F19A4FC1200EACE31 /* GasStop.m */,
+				7B3E68DA19AE0469006C14CD /* Car.h */,
+				7B3E68DB19AE0469006C14CD /* Car.m */,
 			);
 			name = "Data Models";
 			path = ..;
@@ -332,14 +332,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B3E68DC19AE0469006C14CD /* Car.m in Sources */,
 				7BADB74419A50966000A4A40 /* STViewHistoryTableViewController.m in Sources */,
-				7BE5774319A4FC1200EACE31 /* Car.m in Sources */,
 				7BE5770A19A4F40000EACE31 /* STViewController.m in Sources */,
 				7BE5770019A4F40000EACE31 /* main.m in Sources */,
 				7BE7D6BB19A66FC1006641C4 /* STViewInformationTableViewCell.m in Sources */,
-				7BE5774019A4FC1200EACE31 /* GasStop.m in Sources */,
 				7BADB74819A50981000A4A40 /* STAddCarViewController.m in Sources */,
 				7BE5770419A4F40000EACE31 /* STAppDelegate.m in Sources */,
+				7B3E68DF19AE1D64006C14CD /* GasStop.m in Sources */,
 				7BE5772A19A4F42E00EACE31 /* Model.xcdatamodeld in Sources */,
 				7BADB74119A5093F000A4A40 /* STAddGasLogViewController.m in Sources */,
 			);

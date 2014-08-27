@@ -2,7 +2,7 @@
 //  Car.h
 //  SaveTrack
 //
-//  Created by Jose Miranda on 8/20/14.
+//  Created by Jose Miranda on 8/27/14.
 //  Copyright (c) 2014 Jose Miranda. All rights reserved.
 //
 
@@ -13,9 +13,9 @@
 
 @interface Car : NSManagedObject
 
-@property (nonatomic, retain) NSDecimalNumber * year;
-@property (nonatomic, retain) NSString * model;
 @property (nonatomic, retain) NSString * make;
+@property (nonatomic, retain) NSString * model;
+@property (nonatomic, retain) NSNumber * year;
 @property (nonatomic, retain) NSSet *gasstops;
 @end
 

@@ -7,6 +7,7 @@
 //
 
 #import "STAddCarViewController.h"
+#import "Car.h"
 
 @interface STAddCarViewController ()
 
@@ -56,6 +57,19 @@
 }
 
 - (IBAction)save:(id)sender {
+    id delegate = [[UIApplication sharedApplication] delegate];
+    NSManagedObjectContext *context = [delegate managedObjectContext];
+    Car * car = [NSEntityDescription insertNewObjectForEntityForName:@"Car" inManagedObjectContext:context];
+    NSNumber *yearCar = [NSNumber numberWithInteger:[self.yearTextField.text integerValue]];
+    car.year = yearCar;
+    car.model = self.modelTextField.text;
+    car.make = self.makeTextField.text;
+    NSError *error = nil;
+    if (![context save:&error]) {
+        NSLog(@"Something occurred when saving your car! %@", error);
+    }
+    NSLog(@"Car Saved!");
     [self dismissViewControllerAnimated:YES completion:nil];
+    
 }
 @end

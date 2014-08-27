@@ -2,7 +2,7 @@
 //  GasStop.m
 //  SaveTrack
 //
-//  Created by Jose Miranda on 8/20/14.
+//  Created by Jose Miranda on 8/27/14.
 //  Copyright (c) 2014 Jose Miranda. All rights reserved.
 //
 
@@ -13,9 +13,17 @@
 @implementation GasStop
 
 @dynamic date;
-@dynamic miles;
 @dynamic gallons;
+@dynamic miles;
 @dynamic pricepergallon;
 @dynamic car;
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        
+    }
+    return self;
+}
 @end

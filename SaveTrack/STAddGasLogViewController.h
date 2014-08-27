@@ -13,7 +13,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *milesDrivenTextField;
 @property (weak, nonatomic) IBOutlet UITextField *totalGallonsTextField;
 @property (weak, nonatomic) IBOutlet UITextField *pricePerGallonTextField;
-
+@property (strong,nonatomic) NSMutableArray *gasHistory;
 
 - (IBAction)cancel:(id)sender;
 - (IBAction)save:(id)sender;

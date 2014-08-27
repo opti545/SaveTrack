@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreData/CoreData.h>
 
-@interface STViewController : UIViewController <UIAlertViewDelegate>
+#define EMPTY_ARRAY 0
+@interface STViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UILabel *carName;
+
+-(BOOL) carIsPresent;
 
 @end
