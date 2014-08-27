@@ -51,17 +51,14 @@
     }
     //Create an Car object to get the first Car Only
     privateCar = [fetchResults objectAtIndex:0];
-    currentGasStop = [privateCar.gasstops allObjects];
+    //grabbing the unsorted array from the NSSet
+    NSArray *unsortedArray = [privateCar.gasstops allObjects];
     
-    [currentGasStop sortedArrayUsingComparator:^NSComparisonResult(GasStop *a, GasStop *b){
-        return [a.date compare:b.date];
-        
+    
+    //this will sort the array by date
+    currentGasStop = [unsortedArray sortedArrayUsingComparator:^NSComparisonResult(GasStop *a, GasStop *b){
+        return [b.date compare:a.date];
     }];
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)didReceiveMemoryWarning
@@ -80,7 +77,6 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-
     // Return the number of rows in the section.
     return [currentGasStop count];
 }
