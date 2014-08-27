@@ -45,22 +45,33 @@
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
     [self.view endEditing:YES];
 }
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 - (IBAction)cancel:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
+-(BOOL)isValidData{
+    
+    
+    if ([self.milesDrivenTextField.text isEqualToString:@""]){
+        return NO;
+    }
+    if ([self.totalGallonsTextField.text isEqualToString:@""]) {
+        return NO;
+    }
+    if ([self.pricePerGallonTextField.text isEqualToString:@""]) {
+        return NO;
+    }
+    
+    return YES;
+}
 - (IBAction)save:(id)sender {
+    
+    if(![self isValidData]){
+        UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:@"Check your Data!" message:@"It appears that you left something that we didn't like, please fix and retry" delegate:self cancelButtonTitle:nil otherButtonTitles: @"OK",nil];
+        [alertView show];
+        return;
+    }
     //Fetch Request to get Car everytime the view appears
     NSFetchRequest* request = [NSFetchRequest fetchRequestWithEntityName:@"Car"];
     request.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"model" ascending:YES]];

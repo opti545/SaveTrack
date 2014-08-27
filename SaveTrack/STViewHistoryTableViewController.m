@@ -16,7 +16,6 @@
     Car *privateCar;
     NSArray *currentGasStop;
 }
-
 @end
 
 @implementation STViewHistoryTableViewController

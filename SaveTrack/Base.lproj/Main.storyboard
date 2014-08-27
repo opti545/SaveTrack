@@ -44,7 +44,7 @@
                                 <rect key="frame" x="20" y="45" width="280" height="217"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iyv-yn-Rec">
+                            <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iyv-yn-Rec">
                                 <rect key="frame" x="20" y="322" width="280" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
@@ -57,15 +57,21 @@
                             <constraint firstItem="pLP-Lr-WIf" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="2kn-if-2aA"/>
                             <constraint firstItem="pLP-Lr-WIf" firstAttribute="leading" secondItem="DGI-lP-zW1" secondAttribute="leading" id="3ac-F1-pSg"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="pLP-Lr-WIf" secondAttribute="bottom" constant="20" id="4dE-kA-PMN"/>
+                            <constraint firstItem="Iyv-yn-Rec" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="6dw-38-L7U"/>
+                            <constraint firstItem="DGI-lP-zW1" firstAttribute="top" secondItem="Iyv-yn-Rec" secondAttribute="bottom" constant="40" id="6fm-Nz-6uE"/>
                             <constraint firstItem="pLP-Lr-WIf" firstAttribute="trailing" secondItem="DGI-lP-zW1" secondAttribute="trailing" id="BpU-kR-5LB"/>
                             <constraint firstItem="WbO-dj-Cpd" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" symbolic="YES" id="Ce4-6M-xme"/>
                             <constraint firstAttribute="trailing" secondItem="pLP-Lr-WIf" secondAttribute="trailing" constant="20" id="Hfg-H7-Umi"/>
                             <constraint firstItem="WbO-dj-Cpd" firstAttribute="leading" secondItem="DGI-lP-zW1" secondAttribute="leading" id="LUQ-uy-MHs"/>
+                            <constraint firstItem="Iyv-yn-Rec" firstAttribute="top" secondItem="WbO-dj-Cpd" secondAttribute="bottom" constant="60" id="Lkb-aq-HRB"/>
+                            <constraint firstAttribute="trailing" secondItem="Iyv-yn-Rec" secondAttribute="trailing" constant="20" id="OWy-hB-k8m"/>
                             <constraint firstItem="WbO-dj-Cpd" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="25" id="PyS-Le-a1l"/>
+                            <constraint firstItem="Iyv-yn-Rec" firstAttribute="leading" secondItem="DGI-lP-zW1" secondAttribute="leading" id="SKP-1A-2St"/>
                             <constraint firstItem="DGI-lP-zW1" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="W5i-3N-jce"/>
                             <constraint firstAttribute="trailing" secondItem="WbO-dj-Cpd" secondAttribute="trailing" constant="20" symbolic="YES" id="Xts-FZ-hWB"/>
                             <constraint firstItem="DGI-lP-zW1" firstAttribute="top" secondItem="WbO-dj-Cpd" secondAttribute="bottom" constant="144" id="Yd1-Dl-nUp"/>
                             <constraint firstItem="pLP-Lr-WIf" firstAttribute="top" secondItem="DGI-lP-zW1" secondAttribute="bottom" constant="8" id="adP-CW-eM4"/>
+                            <constraint firstItem="Iyv-yn-Rec" firstAttribute="trailing" secondItem="DGI-lP-zW1" secondAttribute="trailing" id="d9u-G3-7pl"/>
                             <constraint firstItem="DGI-lP-zW1" firstAttribute="trailing" secondItem="WbO-dj-Cpd" secondAttribute="trailing" id="l0M-aC-wqr"/>
                             <constraint firstAttribute="trailing" secondItem="DGI-lP-zW1" secondAttribute="trailing" constant="20" id="oqs-Pk-VzB"/>
                         </constraints>
@@ -190,7 +196,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Hu-AH-aWF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1507" y="-1006"/>
+            <point key="canvasLocation" x="-1551" y="-1022"/>
         </scene>
         <!--View Controller - Graph-->
         <scene sceneID="Q17-KE-N3M">
@@ -209,7 +215,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MKb-dm-Bl1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-995" y="210"/>
+            <point key="canvasLocation" x="-879" y="188"/>
         </scene>
         <!--View History Table View Controller - Table-->
         <scene sceneID="XIr-1N-c86">
@@ -243,7 +249,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4GN-RS-MbE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-995" y="-467"/>
+            <point key="canvasLocation" x="-879" y="-489"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="TYK-hE-aGB">
@@ -262,7 +268,7 @@
                     </connections>
                 </tabBarController>
             </objects>
-            <point key="canvasLocation" x="-1615" y="-285"/>
+            <point key="canvasLocation" x="-1499" y="-307"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

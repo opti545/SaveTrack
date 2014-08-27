@@ -55,8 +55,27 @@
 - (IBAction)cancel:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
-
+-(BOOL)checkValidation{
+    if ([self.yearTextField.text isEqualToString:@""]) {
+        return NO;
+    }
+    if ([self.makeTextField.text isEqualToString:@""]) {
+        return NO;
+    }
+    if ([self.modelTextField.text isEqualToString:@""]){
+        return NO;
+    }
+    return YES;
+}
 - (IBAction)save:(id)sender {
+    //check for data Validation
+    if (![self checkValidation]) {
+        UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:@"Check your Data!" message:@"It appears that you left something that we didn't like, please fix and retry" delegate:self cancelButtonTitle:nil otherButtonTitles: @"OK",nil];
+        [alertView show];
+        return;
+
+    }
+    
     id delegate = [[UIApplication sharedApplication] delegate];
     NSManagedObjectContext *context = [delegate managedObjectContext];
     Car * car = [NSEntityDescription insertNewObjectForEntityForName:@"Car" inManagedObjectContext:context];
