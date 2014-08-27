@@ -8,7 +8,14 @@
 
 #import "STViewHistoryTableViewController.h"
 #import "STViewInformationTableViewCell.h"
+#import <CoreData/CoreData.h>
+#import "Car.h"
+#import "GasStop.h"
 @interface STViewHistoryTableViewController ()
+{
+    Car *privateCar;
+    NSArray *currentGasStop;
+}
 
 @end
 
@@ -29,6 +36,27 @@
     
     
     [self.tableView registerNib:[UINib nibWithNibName:@"STViewInformationTableViewCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"GasStopViewCell"];
+    
+    //Fetch Request to get Car everytime the view appears
+    NSFetchRequest* request = [NSFetchRequest fetchRequestWithEntityName:@"Car"];
+    request.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"model" ascending:YES]];
+    
+    id delegate = [[UIApplication sharedApplication]delegate];
+    NSManagedObjectContext * context = [delegate managedObjectContext];
+    NSError* error = nil;
+    
+    NSArray *fetchResults = [context executeFetchRequest:request error:&error];
+    if ([fetchResults count] == 0) {
+        [self dismissViewControllerAnimated:YES completion:nil];
+    }
+    //Create an Car object to get the first Car Only
+    privateCar = [fetchResults objectAtIndex:0];
+    currentGasStop = [privateCar.gasstops allObjects];
+    
+    [currentGasStop sortedArrayUsingComparator:^NSComparisonResult(GasStop *a, GasStop *b){
+        return [a.date compare:b.date];
+        
+    }];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -54,7 +82,7 @@
 {
 
     // Return the number of rows in the section.
-    return 1;
+    return [currentGasStop count];
 }
 
 
@@ -62,14 +90,22 @@
 {
     STViewInformationTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"GasStopViewCell" forIndexPath:indexPath];
     
-    cell.milesDrivenLabel.text = @"170";
-    cell.pricePerGallonLabel.text = @"3.39";
-    cell.totalGallonsLabel.text = @"9.84";
-    cell.dateLabel.text =@"12/14/2014";
     
+    
+        //NSEntityDescription *entityDescrition = [NSEntityDescription entityForName:@"GasStop" inManagedObjectContext:context];
+
+    GasStop *stop = [currentGasStop objectAtIndex:indexPath.row];
+    
+    
+    cell.milesDrivenLabel.text = [NSString stringWithFormat:@"%@", stop.miles];
+    cell.pricePerGallonLabel.text = [NSString stringWithFormat:@"%@", stop.pricepergallon];
+    cell.totalGallonsLabel.text = [NSString stringWithFormat:@"%@", stop.gallons];
+    
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
+    [dateFormatter setDateFormat:@"MM-dd-yyyy"];
+    cell.dateLabel.text = [dateFormatter stringFromDate:stop.date];
     return cell;
 }
-
 
 /*
 // Override to support conditional editing of the table view.

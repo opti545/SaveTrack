@@ -192,7 +192,7 @@
             </objects>
             <point key="canvasLocation" x="-1507" y="-1006"/>
         </scene>
-        <!--View History Table View Controller - Item-->
+        <!--View History Table View Controller - Table-->
         <scene sceneID="XIr-1N-c86">
             <objects>
                 <tableViewController id="PJx-om-2s5" customClass="STViewHistoryTableViewController" sceneMemberID="viewController">
@@ -218,13 +218,13 @@
                             <outlet property="delegate" destination="PJx-om-2s5" id="AA2-MA-V2d"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="S6A-HF-gK3"/>
+                    <tabBarItem key="tabBarItem" title="Table" id="3by-9Z-nDU"/>
                     <toolbarItems/>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4GN-RS-MbE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-869" y="-252"/>
+            <point key="canvasLocation" x="-884" y="-292"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="tAi-z7-3bU">
