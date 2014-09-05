@@ -18,15 +18,10 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <navigationBar appearanceType="aqua" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="giL-RN-HUs">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <rect key="frame" x="0.0" y="12" width="320" height="44"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                     <items>
                         <navigationItem title="Add a Car" id="c79-jY-Hoj">
-                            <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="tkU-H1-Itl">
-                                <connections>
-                                    <action selector="cancel:" destination="-1" id="0jW-Fp-G5T"/>
-                                </connections>
-                            </barButtonItem>
                             <barButtonItem key="rightBarButtonItem" systemItem="save" id="rFe-FE-S6C">
                                 <connections>
                                     <action selector="save:" destination="-1" id="QCb-Jb-aBe"/>

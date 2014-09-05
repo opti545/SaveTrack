@@ -11,7 +11,11 @@
 
 #define EMPTY_ARRAY 0
 @interface STViewController : UIViewController
+
 @property (strong, nonatomic) IBOutlet UILabel *carName;
+
+
+@property (strong, nonatomic) IBOutlet UILabel *mpgSinceLastRecordLabel;
 
 -(BOOL) carIsPresent;
 
