@@ -18,11 +18,11 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DGI-lP-zW1">
-                                <rect key="frame" x="20" y="394" width="280" height="67"/>
+                                <rect key="frame" x="20" y="387" width="280" height="42"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="67" id="oU6-Os-cpD"/>
+                                    <constraint firstAttribute="height" constant="42" id="oU6-Os-cpD"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="28"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
                                 <state key="normal" title="Add Gas Stop"/>
                                 <connections>
                                     <segue destination="c2h-0s-JYk" kind="modal" id="fab-Uh-lhO"/>
@@ -52,14 +52,22 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pLP-Lr-WIf">
-                                <rect key="frame" x="20" y="469" width="280" height="67"/>
+                                <rect key="frame" x="20" y="437" width="280" height="42"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="67" id="O8i-X3-UjN"/>
+                                    <constraint firstAttribute="height" constant="42" id="O8i-X3-UjN"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="28"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
                                 <state key="normal" title="View History"/>
                                 <connections>
                                     <segue destination="lbC-dK-FNg" kind="modal" id="iXt-Uu-nDG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gZf-oe-XIM">
+                                <rect key="frame" x="20" y="487" width="280" height="42"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
+                                <state key="normal" title="View Car Info"/>
+                                <connections>
+                                    <action selector="viewCarInformationAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="2WA-o1-NPe"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -67,10 +75,10 @@
                         <constraints>
                             <constraint firstItem="pLP-Lr-WIf" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="2kn-if-2aA"/>
                             <constraint firstItem="pLP-Lr-WIf" firstAttribute="leading" secondItem="DGI-lP-zW1" secondAttribute="leading" id="3ac-F1-pSg"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="pLP-Lr-WIf" secondAttribute="bottom" constant="32" id="4dE-kA-PMN"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="pLP-Lr-WIf" secondAttribute="bottom" constant="89" id="4dE-kA-PMN"/>
                             <constraint firstItem="N9r-EP-Ig5" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="183" id="6q3-Dl-1Q4"/>
                             <constraint firstAttribute="trailing" secondItem="7p0-Wr-dlT" secondAttribute="trailing" constant="20" id="8ix-ze-Qrt"/>
-                            <constraint firstItem="DGI-lP-zW1" firstAttribute="top" secondItem="7p0-Wr-dlT" secondAttribute="bottom" constant="81" id="9ET-oT-PgO"/>
+                            <constraint firstItem="DGI-lP-zW1" firstAttribute="top" secondItem="7p0-Wr-dlT" secondAttribute="bottom" constant="74" id="9ET-oT-PgO"/>
                             <constraint firstItem="pLP-Lr-WIf" firstAttribute="trailing" secondItem="DGI-lP-zW1" secondAttribute="trailing" id="BpU-kR-5LB"/>
                             <constraint firstItem="zt5-Wr-qu3" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" symbolic="YES" id="DVG-xB-ptW"/>
                             <constraint firstItem="7p0-Wr-dlT" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="GCh-KN-vVP"/>
@@ -128,7 +136,7 @@
                                 </items>
                             </navigationBar>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tkn-v9-peZ">
-                                <rect key="frame" x="20" y="258" width="280" height="56"/>
+                                <rect key="frame" x="20" y="233" width="280" height="28"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Price per Gallon">
                                         <attributes>
@@ -141,7 +149,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="e.g. 236" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WGu-7Y-1lK">
-                                <rect key="frame" x="20" y="118" width="209" height="30"/>
+                                <rect key="frame" x="20" y="121" width="280" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                 <connections>
@@ -149,7 +157,7 @@
                                 </connections>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uVR-uv-HX4">
-                                <rect key="frame" x="20" y="156" width="280" height="56"/>
+                                <rect key="frame" x="20" y="159" width="280" height="28"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Total Gallons">
                                         <attributes>
@@ -162,7 +170,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="e.g. 8.45" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uEP-GC-PQG">
-                                <rect key="frame" x="20" y="220" width="209" height="30"/>
+                                <rect key="frame" x="16" y="195" width="288" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
@@ -171,7 +179,7 @@
                                 </connections>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xtd-zJ-h9F">
-                                <rect key="frame" x="20" y="54" width="280" height="56"/>
+                                <rect key="frame" x="20" y="85" width="280" height="28"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Miles Driven">
                                         <attributes>
@@ -184,7 +192,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="e.g. 3.56" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lo3-Ck-0fR">
-                                <rect key="frame" x="20" y="322" width="209" height="30"/>
+                                <rect key="frame" x="20" y="269" width="284" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                 <connections>

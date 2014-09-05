@@ -91,7 +91,7 @@
     GasStop *currentGasStop = [[GasStop alloc]initWithEntity:entityDescrition insertIntoManagedObjectContext:context];
     currentGasStop.car = currentCar;
     [currentGasStop setDate:[NSDate date]];
-    currentGasStop.gallons = [NSNumber numberWithInteger:[self.totalGallonsTextField.text integerValue]];
+    currentGasStop.gallons = [NSNumber numberWithFloat:[self.totalGallonsTextField.text floatValue]];
     currentGasStop.pricepergallon = [NSNumber numberWithFloat:[self.pricePerGallonTextField.text floatValue]];
     currentGasStop.miles = [NSNumber numberWithInteger:[self.milesDrivenTextField.text integerValue]];
     [currentCar addGasstopsObject:currentGasStop];

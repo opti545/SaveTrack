@@ -109,6 +109,26 @@
     return YES;
 
 }
+
+- (IBAction)viewCarInformationAction:(id)sender {
+    STAddCarViewController *view = [[STAddCarViewController alloc]initWithNibName:@"STAddCarViewController" bundle:nil];
+    //Fetch Request to get Car everytime the view appears
+    NSFetchRequest* request = [NSFetchRequest fetchRequestWithEntityName:@"Car"];
+    request.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"model" ascending:YES]];
+    id delegate = [[UIApplication sharedApplication]delegate];
+    NSManagedObjectContext * context = [delegate managedObjectContext];
+    NSError* error = nil;
+    
+    NSArray *fetchResults = [context executeFetchRequest:request error:&error];
+    Car* localCar = [fetchResults objectAtIndex:0];
+    
+    [self presentViewController:view animated:YES completion:^{
+        view.yearTextField.text = [localCar.year stringValue];
+        view.modelTextField.text = localCar.model;
+        view.makeTextField.text = localCar.make;
+    }];
+    
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

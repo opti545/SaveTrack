@@ -18,5 +18,6 @@
 @property (strong, nonatomic) IBOutlet UILabel *mpgSinceLastRecordLabel;
 
 -(BOOL) carIsPresent;
+- (IBAction)viewCarInformationAction:(id)sender;
 
 @end
